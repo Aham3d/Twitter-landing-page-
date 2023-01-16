@@ -1,0 +1,444 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+
+
+
+  /*  */
+
+.main {
+    width: 1250px;
+    margin: auto;
+  }
+
+body {
+    background-color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    display: inline-block;
+}
+
+a {
+    color: #eff3f4;
+}
+
+/* SIDE BAR */
+
+.side-bar   {
+    width: 269px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* text-align: center; */
+    /* align-items: center; */
+    border-right: 1px solid #2f3336;
+    padding: 0 12px;
+    padding-top: 3px;
+    row-gap: 120px;
+}
+
+/* LOGO */
+
+.logo-a {
+    width: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    transition: 0.2s ease-in;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    filter: invert();
+    width: 30px;
+
+}
+
+.logo:hover {
+    background-color: #0086b625;
+}
+
+/* MENU */
+
+.menu img {
+    /* width: 251px; */
+    filter: invert();
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e7e9ea;
+    font-size: 20px;
+    /* font-weight: 500; */
+    letter-spacing: normal;
+    padding: 4px 0;
+    /* width: auto; */
+}
+
+.one:hover {
+    background-color: #1d9bf0;
+}
+
+.home {
+    width: 141px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.home img  {
+    width: 25px;
+    align-items: center;
+}
+
+.home:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+.explore {
+    width: 152px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.explore img  {
+    width: 25px;
+    align-items: center;
+}
+
+.explore:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+.notifications {
+    width: 221px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.notifications img  {
+    width: 25px;
+    align-items: center;
+}
+
+.notifications:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+
+.messages {
+    width: 175px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.messages img  {
+    width: 25px;
+    align-items: center;
+}
+
+.messages:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+
+.bookmarks {
+    width: 186px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.bookmarks img  {
+    width: 25px;
+    align-items: center;
+}
+
+.bookmarks:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+
+.lists {
+    width: 128px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.lists img  {
+    width: 25px;
+    align-items: center;
+}
+
+.lists:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+.profile {
+    width: 143px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.profile img  {
+    width: 25px;
+    align-items: center;
+}
+
+.profile:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+.more {
+    width: 132px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+    padding: 12px;
+    margin: 4px 0;
+    transition: 0.1s ease-in;
+}
+
+.more img  {
+    width: 25px;
+    align-items: center;
+}
+
+.more:hover {
+    background-color: #151515;
+    border-radius: 25px;
+}
+
+
+/* TWEET BUTTON */
+
+/* .tweet-left {
+    padding: 10px;
+} */
+
+.left-tweet-button {
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    width: 225px;
+    height: 52px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+/* user */
+
+.user {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    /* margin-top: 30px; */
+    border-radius: 30px;
+} 
+
+.user:hover {
+    background-color: #151515;
+}
+
+.user-pic {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+.user-pic img   {
+    width: 40px;
+    border-radius: 40px;
+    /* margin-right: 25px; */
+    /* margin-bottom: 1px; */
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+}
+
+.user p {
+    color: #e7e9ea;
+    font-size: 15px;
+    font-weight: 500;
+    line-height:20px;
+    letter-spacing: 0.6px;
+}
+
+.user p span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #909498;
+}
+
+.dots {
+    display: flex;
+    width: 80px;
+    /* float: right; */
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.dots img  {
+    width: 21px;
+}
+
+
+
+
+
+
+
+
+.main-part  {
+    background-color: yellowgreen;
+}
+
+.right-part {
+    background-color: yellowgreen;
+}
+
+
+
+
+
