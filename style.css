@@ -129,6 +129,9 @@ a {
     padding: 0 12px;
     padding-top: 3px;
     row-gap: 120px;
+    position: fixed;
+    z-index: 100;
+   
 }
 
 /* LOGO */
@@ -458,30 +461,29 @@ a {
 
 .content-section {
     width: 980px;
-
+    position: relative;
+    right: -269px;
+    
 }
 
 
 
 
+/* HEADER */
 
-
-/* center-section */
-
-.center-section {
-    width: 630px;
-    border-right: 1px solid #2f3336;
-    /* padding: 10px; */
-}
 
 .header {
-    width: 100%;
+    width: 629px;
     display: flex;
     flex-direction: row;
     height: 60px;
     align-items: center;
     border-bottom: 1px solid #2f3336;
-    
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    left: 404px;
+    border-right: 1px solid #2f3336;
 }
 
 .header-l {
@@ -501,6 +503,7 @@ a {
     width: 100px;
     display: inline-block;
     border-bottom: 4px solid #1d9bf0;
+    z-index: 200;
 } 
 
 .header-l:hover {
@@ -536,6 +539,14 @@ a {
 
 
 
+/* center-section */
+
+.center-section {
+    width: 630px;
+    border-right: 1px solid #2f3336;
+    bottom: -58px;
+    position: relative;
+}
 
 
 /* compose tweet */
