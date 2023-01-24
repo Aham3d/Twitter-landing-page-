@@ -375,7 +375,10 @@ a {
     height: 52px;
     border-radius: 30px;
     margin-top: 15px;
+    cursor: pointer;
 }
+
+
 
 /* user */
 
@@ -388,6 +391,8 @@ a {
     text-align: left;
     /* margin-top: 30px; */
     border-radius: 30px;
+    cursor: pointer;
+    transition: 0.15s ease-in;
 } 
 
 .user:hover {
@@ -466,6 +471,7 @@ a {
 .center-section {
     width: 630px;
     border-right: 1px solid #2f3336;
+    /* padding: 10px; */
 }
 
 .header {
@@ -523,6 +529,235 @@ a {
 .header-r:hover {
     background-color: #151515;
 }
+
+
+
+
+
+
+
+
+
+/* compose tweet */
+
+.compose-tweet  {
+    width: 100%;
+    /* height: 110px; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 10px;
+    row-gap: 10px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.compose-top {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.compose-pic {
+    height: 100%;
+}
+
+.compose-pic img {
+    width: 48px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.compose-top p {
+    color: #71767b;
+    /* font-weight: 500; */
+    font-size: 20px;
+}
+
+.compose-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.compose-bottom a {
+    text-decoration: none;
+}
+
+.compose-bottom-icons img {
+    width: 20px;
+    filter: invert(53%) sepia(68%) saturate(3540%) hue-rotate(179deg) brightness(100%) contrast(89%);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.compose-bottom-tweet button{
+    background-color: #1d9bf0;
+    opacity: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 80px;
+    height: 42px;
+}
+
+.more-tweets {
+    text-decoration: none;
+}
+
+.more-tweets p{
+    color: #1d9bf0;
+    height: 50px;
+    text-align: center;
+    padding-top: 11px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.more-tweets p:hover {
+    background-color: #15151563;
+}
+
+
+
+
+
+/* tweet section */
+
+.tweet-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px 0 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #2f3336;
+    padding-bottom: 15px;
+}
+
+.tweeters-icon {
+    width: 50px;
+    margin-right:15px;
+        /* justify-content: center;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle; */
+    display: flex;
+}
+
+.tweeters-icon img {
+    /* display: inline-block; */
+    width: 48px;
+    height: 44px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tweeters-tweet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.tweeters-info {
+    width: 100%;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#line-1 {
+    display: flex;
+    align-items: center;
+} 
+
+.name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.tweeters-info img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 7px;
+}
+
+.name-at {
+    color: #71767b;
+    font-size: 15px;
+}
+
+#line-1-dots {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    /* vertical-align: middle; */
+}
+
+#line-1-dots:hover {
+    background-color: #0086b625;
+    filter: invert(53%) sepia(68%) saturate(3540%) hue-rotate(179deg) brightness(100%) contrast(89%);
+}
+
+.tweet-three-dots   {
+    margin-left: 6px;
+}
+
+.tweet-message p {
+    font-size: 15px;
+}
+
+.tweeter-post img {
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+.line-3 {
+    width: 80%;
+    text-decoration: none;  
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.line-3 img {
+    filter: invert(47%) sepia(8%) saturate(292%) hue-rotate(169deg) brightness(94%) contrast(89%);    width: 40px;
+    width: 17px;   
+    margin-right: 8px;
+}
+
+.line-3 p {
+    color: #71767b;
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+
+.line-3 div {
+    display: flex;
+}
+
 
 
 
