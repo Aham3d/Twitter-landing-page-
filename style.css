@@ -588,23 +588,43 @@ a {
 
 .compose-bottom {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
-    padding-left: 65px;
+    padding-left: 55px;
     height: 50%;
     text-align: center;
     align-items: center;
     vertical-align: middle;
 }
 
-.compose-bottom a {
-    text-decoration: none;
+.compose-bottom-icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .compose-bottom-icons img {
     width: 20px;
     filter: invert(53%) sepia(68%) saturate(3540%) hue-rotate(179deg) brightness(100%) contrast(89%);
-    margin-right: 10px;
-    margin-top: 5px;
+
+}
+
+.compose-bottom-icons div {
+    width: 35px;
+    height: 35px;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.compose-bottom-icons div:hover {
+    background-color: #0086b625;
+    
 }
 
 .compose-bottom-tweet button{
@@ -769,7 +789,27 @@ a {
     display: flex;
 }
 
+#comment:hover {
+    filter: invert(44%) sepia(99%) saturate(1278%) hue-rotate(179deg) brightness(98%) contrast(93%);
+}
 
+#retweet:hover {
+    filter: invert(49%) sepia(90%) saturate(1216%) hue-rotate(121deg) brightness(90%) contrast(101%);
+}
+
+#like:hover {
+    filter: invert(18%) sepia(64%) saturate(4985%) hue-rotate(322deg) brightness(103%) contrast(95%);
+}
+
+#view:hover {
+    filter: invert(49%) sepia(90%) saturate(1216%) hue-rotate(121deg) brightness(90%) contrast(101%);
+
+}
+
+#share:hover {
+    filter: invert(44%) sepia(99%) saturate(1278%) hue-rotate(179deg) brightness(98%) contrast(93%);
+
+}
 
 
 
